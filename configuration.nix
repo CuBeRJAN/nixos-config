@@ -46,7 +46,7 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
   # Enable chrome gnome shell integration
-  services.gnome.chrome-gnome-shell.enable
+  services.gnome.chrome-gnome-shell.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
