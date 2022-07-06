@@ -107,6 +107,7 @@
       spotify
       google-chrome
       firefox
+      htop
       tuxguitar
       discord
       antimicrox
