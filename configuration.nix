@@ -1,6 +1,4 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# :)
 
 { config, pkgs, ... }:
 
@@ -14,8 +12,15 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
+  
+  # Zram
+  zramSwap.enable = true;
+  zramSwap.memoryMax = 8172;
+  zramSwap.numDevices = 1;
+  zramSwap.swapDevices = 1;
 
-  networking.hostName = "deimos"; # Define your hostname.
+  # Hostname
+  networking.hostName = "deimos";
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
