@@ -15,7 +15,7 @@
   
   # Zram
   zramSwap.enable = true;
-  zramSwap.memoryMax = 8172;
+  zramSwap.memoryMax = 50;
   zramSwap.numDevices = 1;
   zramSwap.swapDevices = 1;
 
